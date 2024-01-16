@@ -15,14 +15,12 @@ on:
       targets:
         description: 'target devices'
         required: true
-        default: "['sunxi-cortexa7', 'x86-64']"
+        default: "['meson-meson8b']"
         type: choice
         options:
         - "['meson-meson8b']"
-        - "['sunxi-cortexa7']"
         - "['x86-64']"
-        - "['sunxi-cortexa7', 'x86-64']"
-        - "['meson-meson8b', 'sunxi-cortexa7', 'x86-64']"
+        - "['meson-meson8b','x86-64']"
 
 jobs:
   build:
